@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.56.3" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Home :: My New Hugo Site</title>
+
+    
+    <link href="/css/nucleus.css?1566240586" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1566240586" rel="stylesheet">
+    <link href="/css/hybrid.css?1566240586" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1566240586" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1566240586" rel="stylesheet">
+    <link href="/css/auto-complete.css?1566240586" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1566240586" rel="stylesheet">
+    <link href="/css/theme.css?1566240586" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1566240586" rel="stylesheet">
+    
+      <link href="/css/theme-green.css?1566240586" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1566240586"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <img src="/images/rozvo.png">
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1566240586"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1566240586"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/proyectospurata.github.io\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1566240586"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+
+        
+
+
+<span id="sidebar-toggle-span">
+<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
+</span>
+
+ 
+
+
+<h1 id="instalación-de-postgresql">Instalación de postgreSQL</h1>
+
+<h3 id="instalación-por-medio-de-la-terminal">Instalación por medio de la terminal</h3>
+
+<h3 id="en-centos-x86">En Centos x86</h3>
+
+<p> Por medio de su navegador favorito ingrese a la pagina oficial de postgre que es <a href="https://www.postgresql.org/">postgreSQL</a> </p>
+
+<p><img src="images/1.png" /></p>
+
+<p>Una vez dentro dar clic en <strong>Download</strong>, nos redireccionará y deberemos seleccionar el sistema operativo que estamos usando, en este caso es <em>centOS</em> por lo cual seleccionaremos <strong>red hat</strong>.</p>
+
+<p><img src="images/2.png" /></p>
+
+<div class="notices note" ><p>Se recomienda hacer uso de una versión anterior a la actual, para evitar encontrarnos con errores</p>
+</div>
+
+<p><ol>
+Vamos a la sección <strong>PostgreSQL Yum Repository</strong> y seleccionamos:
+<li><strong> Select version:</strong>  <em>10</em>
+<li><strong>Select platform:</strong> <em>RedHat ENterprise, CentOS, Scientific or Oracle version 7</em>
+<li> <strong> Select architecture: </strong>  <em>x86_64</em>
+<ol></p>
+
+<p><em>Los pasos 4,5,6 y 7 se realizarán en la terminal de su sistema operativo centOS.</em></p>
+
+<p><img src="images/3.png" /></p>
+
+<p>En la terminal de centOS se instala el repositorio de postgreSQL con el siguiente comando:</p>
+
+<pre><code class="language-toml">
+# install https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+</code></pre>
+
+<div>
+Cuando temrine la instalación del repositorio continuamos con la parte 5, que es instalar los paquetes.
+<div>
+
+
+
+<pre><code class="language-toml">
+# yum install postgresql10
+</code></pre>
+
+
+Por último activamos y reiniciamos el servicio de PostgreSQL con los siguientes comandos
+
+
+<pre><code class="language-toml">
+# /usr/pgsql-11/bin/postgresql-10-setup initdb
+</code></pre>
+
+
+
+<pre><code class="language-toml">
+# systemctl enable postgresql-10
+</code></pre>
+
+
+
+<pre><code class="language-toml">
+# systemctl start postgresql-10
+</code></pre>
+
+<strong>Listo!</strong> Tiene postgreSQL instalado en su sistema operativo centOS
+
+
+<div class="notices tip" ><p>Para acceder a postgreSQL los comandos son: <strong>su - postgres</strong> y <strong>psql</strong> .</p>
+</div>
+	
+  
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1566240586"></script>
+    <script src="/js/perfect-scrollbar.min.js?1566240586"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1566240586"></script>
+    <script src="/js/jquery.sticky.js?1566240586"></script>
+    <script src="/js/featherlight.min.js?1566240586"></script>
+    <script src="/js/highlight.pack.js?1566240586"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1566240586"></script>
+    <script src="/js/learn.js?1566240586"></script>
+    <script src="/js/hugo-learn.js?1566240586"></script>
+
+    <link href="/mermaid/mermaid.css?1566240586" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1566240586"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+
